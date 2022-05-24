@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if context %}
+Name : {{ context.name }} <br>
+Ingrediants : {{ context.ingrediants }}<br>
+Process : {{ context.process }}<br>
+{% endif %}
+
+<br> <a href="{% url 'menu:index' %}">Back</a>
+</body>
+</html>
+
+<br><br/>
+<a href="/accounts/logout">Logout</a>

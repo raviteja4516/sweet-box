@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MENU</title>
+</head>
+<a>
+<b>MENU<br>
+{% if context %}
+    {% for each in context %}
+<a href="{% url 'menu:detail' each.id %}">{{each.name}}</a><br>
+
+    {% endfor %}
+{% endif %}
+
+</body>
+</html>
+<a href="{% url 'menu:create' %}">Create</a>
+
+
+<br><br/>
+<a href="/accounts/logout">Logout</a>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method='post'>
+    {% csrf_token %}
+
+    Name of the Recipe: <input type="text" name="name"><br>
+    Ingrediants: <input type="text" name="ingrediants"><br>
+    Process : <input type="text" name="process"><br>
+    <input type="submit" value="submit"><br>
+
+</form>
+</body>
+
+
+<br><br/>
+<a href="/accounts/logout">Logout</a>
